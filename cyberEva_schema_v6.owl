@@ -1,0 +1,2109 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/cybereva"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/cybereva">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/cybereva"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#DeviceFirmware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceOsType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceOsVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GranuleRepresentative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Granules"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MapLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScannedDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToGranule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFirmware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOsType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOsVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRepresentative"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScannedDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFirmwareOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFoundDuring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGranuleRepresentativeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isModelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel0"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1CveCvssTotalScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1EcCouncilAttack"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedClearingTracks"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedGainingAccess"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedMaintainingAccess"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedScanning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprBiometricDataBreachProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprCrossBorderProcessingProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprDataConcerningHealthBreachProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprLevelOfProtection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataBreachProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossPermProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossTempProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityConfidentialityLossProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityIntegrityLossProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprProcessingProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1GdprProfilingProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1Ia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1IaAuthenticityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1IaAvailabilityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1IaConfidentialityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1IaIntegrityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1IaNonRepudiationAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1Os"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsFilePrinterSharingSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsImSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsInstalledApplicationsSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsMtaSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsOsSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsRemoveAccessSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsWebServerSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsiModelLayer1SecurityPostureAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsiModelLayer2SecurityPostureAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsiModelLayer3SecurityPostureAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsiModelLayer4SecurityPostureAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsiModelLayer5SecurityPostureAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsiModelLayer6SecurityPostureAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1OsiModelLayer7SecurityPostureAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskDataSecurity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityAvailabilityLoss"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityConfidentialityLoss"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityDataBreach"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityIntegrityLoss"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityDataConcerningHealthBreach"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityFinancialLoss"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIdentityTheft"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIntellectualPropertyLoss"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityPublicReputationDamage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPhysical"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPhysicalEnvironmentDegradation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1RiskPhysicalHumanInjury"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2EcCouncilAttackDetectionProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2GdprCompliance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2IaSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2OsSecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2OsiModelSecurityPostureAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2RiskDataSecuritySecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2RiskPersonalDataSecuritySecurityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2RiskPhysicalAssessment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel3DeviceTotalIntroducedRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel3DeviceTotalSecurityScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevel3Score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLocationProperties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLocationTotalSecurityScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLocationTotalSynergySecurityScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfDevices"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOsUpdate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasScanProperties"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#GranuleRepresentative"/>
+        <Class IRI="#ScannedDevice"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToGranule"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFirmware"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasManufacturer"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasModel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOsType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOsVersion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasScannedDevice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFirmwareOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFoundDuring"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isModelOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isVersionOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#isIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRepresentative"/>
+        <ObjectProperty IRI="#isGranuleRepresentativeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasScannedDevice"/>
+        <ObjectProperty IRI="#isFoundDuring"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#belongsToGranule"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasModel"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRepresentative"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasScannedDevice"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isFoundDuring"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isGranuleRepresentativeOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isGranuleRepresentativeOf"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToGranule"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#MapLocation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFirmware"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasManufacturer"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModel"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOsType"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOsVersion"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRepresentative"/>
+        <Class IRI="#Granules"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScannedDevice"/>
+        <Class IRI="#Scan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFirmwareOf"/>
+        <Class IRI="#DeviceFirmware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFoundDuring"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGranuleRepresentativeOf"/>
+        <Class IRI="#GranuleRepresentative"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIn"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isModelOf"/>
+        <Class IRI="#DeviceModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+        <Class IRI="#DeviceType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isVersionOf"/>
+        <Class IRI="#DeviceOsVersion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToGranule"/>
+        <Class IRI="#Granules"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFirmware"/>
+        <Class IRI="#DeviceFirmware"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasManufacturer"/>
+        <Class IRI="#DeviceManufacturer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModel"/>
+        <Class IRI="#DeviceModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOsType"/>
+        <Class IRI="#DeviceOsType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOsVersion"/>
+        <Class IRI="#DeviceOsVersion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRepresentative"/>
+        <Class IRI="#GranuleRepresentative"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScannedDevice"/>
+        <Class IRI="#ScannedDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFirmwareOf"/>
+        <Class IRI="#DeviceModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFoundDuring"/>
+        <Class IRI="#Scan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGranuleRepresentativeOf"/>
+        <Class IRI="#Granules"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIn"/>
+        <Class IRI="#MapLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isModelOf"/>
+        <Class IRI="#DeviceManufacturer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+        <Class IRI="#DeviceType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <Class IRI="#DeviceType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isVersionOf"/>
+        <Class IRI="#DeviceOsType"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDate"/>
+        <DataProperty IRI="#hasScanProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLatitude"/>
+        <DataProperty IRI="#hasScanProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1CveCvssTotalScore"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1EcCouncilAttack"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedClearingTracks"/>
+        <DataProperty IRI="#hasLevel1EcCouncilAttack"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedGainingAccess"/>
+        <DataProperty IRI="#hasLevel1EcCouncilAttack"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedMaintainingAccess"/>
+        <DataProperty IRI="#hasLevel1EcCouncilAttack"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedReconnaissance"/>
+        <DataProperty IRI="#hasLevel1EcCouncilAttack"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedScanning"/>
+        <DataProperty IRI="#hasLevel1EcCouncilAttack"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprBiometricDataBreachProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprCrossBorderProcessingProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprDataConcerningHealthBreachProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprLevelOfProtection"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataBreachProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossPermProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossTempProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityConfidentialityLossProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityIntegrityLossProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprProcessingProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1GdprProfilingProbability"/>
+        <DataProperty IRI="#hasLevel1Gdpr"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1Ia"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1IaAuthenticityAssessment"/>
+        <DataProperty IRI="#hasLevel1Ia"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1IaAvailabilityAssessment"/>
+        <DataProperty IRI="#hasLevel1Ia"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1IaConfidentialityAssessment"/>
+        <DataProperty IRI="#hasLevel1Ia"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1IaIntegrityAssessment"/>
+        <DataProperty IRI="#hasLevel1Ia"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1IaNonRepudiationAssessment"/>
+        <DataProperty IRI="#hasLevel1Ia"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1Os"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsFilePrinterSharingSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel1Os"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsImSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel1Os"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsInstalledApplicationsSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel1Os"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsMtaSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel1Os"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsOsSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel1Os"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsRemoveAccessSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel1Os"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsWebServerSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel1Os"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsiModelLayer1SecurityPostureAssessment"/>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsiModelLayer2SecurityPostureAssessment"/>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsiModelLayer3SecurityPostureAssessment"/>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsiModelLayer4SecurityPostureAssessment"/>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsiModelLayer5SecurityPostureAssessment"/>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsiModelLayer6SecurityPostureAssessment"/>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1OsiModelLayer7SecurityPostureAssessment"/>
+        <DataProperty IRI="#hasLevel1OsiModel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskDataSecurity"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityAvailabilityLoss"/>
+        <DataProperty IRI="#hasLevel1RiskDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityConfidentialityLoss"/>
+        <DataProperty IRI="#hasLevel1RiskDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityDataBreach"/>
+        <DataProperty IRI="#hasLevel1RiskDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityIntegrityLoss"/>
+        <DataProperty IRI="#hasLevel1RiskDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurity"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityDataConcerningHealthBreach"/>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityFinancialLoss"/>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIdentityTheft"/>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIntellectualPropertyLoss"/>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityPublicReputationDamage"/>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPhysical"/>
+        <DataProperty IRI="#hasLevel1Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPhysicalEnvironmentDegradation"/>
+        <DataProperty IRI="#hasLevel1RiskPhysical"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel1RiskPhysicalHumanInjury"/>
+        <DataProperty IRI="#hasLevel1RiskPhysical"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel2EcCouncilAttackDetectionProbability"/>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel2GdprCompliance"/>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel2IaSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel2OsSecurityAssessment"/>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel2OsiModelSecurityPostureAssessment"/>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel2RiskDataSecuritySecurityAssessment"/>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel2RiskPersonalDataSecuritySecurityAssessment"/>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel2RiskPhysicalAssessment"/>
+        <DataProperty IRI="#hasLevel2Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel3DeviceTotalIntroducedRiskScore"/>
+        <DataProperty IRI="#hasLevel3Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevel3DeviceTotalSecurityScore"/>
+        <DataProperty IRI="#hasLevel3Score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLocationTotalSecurityScore"/>
+        <DataProperty IRI="#hasLocationProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLocationTotalSynergySecurityScore"/>
+        <DataProperty IRI="#hasLocationProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLongitude"/>
+        <DataProperty IRI="#hasScanProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="#hasLevel0"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNumberOfDevices"/>
+        <DataProperty IRI="#hasLocationProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOsUpdate"/>
+        <DataProperty IRI="#hasLevel0"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLatitude"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1CveCvssTotalScore"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedClearingTracks"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedGainingAccess"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedMaintainingAccess"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedReconnaissance"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedScanning"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprBiometricDataBreachProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprCrossBorderProcessingProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprDataConcerningHealthBreachProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprLevelOfProtection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataBreachProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossPermProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossTempProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityConfidentialityLossProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityIntegrityLossProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprProcessingProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1GdprProfilingProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1IaAuthenticityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1IaAvailabilityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1IaConfidentialityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1IaIntegrityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1IaNonRepudiationAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsFilePrinterSharingSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsImSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsInstalledApplicationsSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsMtaSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsOsSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsRemoveAccessSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsWebServerSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsiModelLayer1SecurityPostureAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsiModelLayer2SecurityPostureAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsiModelLayer3SecurityPostureAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsiModelLayer4SecurityPostureAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsiModelLayer5SecurityPostureAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsiModelLayer6SecurityPostureAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1OsiModelLayer7SecurityPostureAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityAvailabilityLoss"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityConfidentialityLoss"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityDataBreach"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityIntegrityLoss"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityDataConcerningHealthBreach"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityFinancialLoss"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIdentityTheft"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIntellectualPropertyLoss"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityPublicReputationDamage"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskPhysicalEnvironmentDegradation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel1RiskPhysicalHumanInjury"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel2EcCouncilAttackDetectionProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel2GdprCompliance"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel2IaSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel2OsSecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel2OsiModelSecurityPostureAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel2RiskDataSecuritySecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel2RiskPersonalDataSecuritySecurityAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel2RiskPhysicalAssessment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel3DeviceTotalIntroducedRiskScore"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLevel3DeviceTotalSecurityScore"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLocationTotalSecurityScore"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLocationTotalSynergySecurityScore"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLongitude"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasNumberOfDevices"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasOsUpdate"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDate"/>
+        <Class IRI="#Scan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLatitude"/>
+        <Class IRI="#Scan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1CveCvssTotalScore"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedClearingTracks"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedGainingAccess"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedMaintainingAccess"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedReconnaissance"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedScanning"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprBiometricDataBreachProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprCrossBorderProcessingProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprDataConcerningHealthBreachProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprLevelOfProtection"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataBreachProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossPermProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossTempProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityConfidentialityLossProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityIntegrityLossProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprProcessingProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1GdprProfilingProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1IaAuthenticityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1IaAvailabilityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1IaConfidentialityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1IaIntegrityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1IaNonRepudiationAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsFilePrinterSharingSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsImSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsInstalledApplicationsSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsMtaSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsOsSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsRemoveAccessSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsWebServerSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsiModelLayer1SecurityPostureAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsiModelLayer2SecurityPostureAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsiModelLayer3SecurityPostureAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsiModelLayer4SecurityPostureAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsiModelLayer5SecurityPostureAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsiModelLayer6SecurityPostureAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1OsiModelLayer7SecurityPostureAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityAvailabilityLoss"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityConfidentialityLoss"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityDataBreach"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityIntegrityLoss"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityDataConcerningHealthBreach"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityFinancialLoss"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIdentityTheft"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIntellectualPropertyLoss"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityPublicReputationDamage"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskPhysicalEnvironmentDegradation"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel1RiskPhysicalHumanInjury"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel2EcCouncilAttackDetectionProbability"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel2GdprCompliance"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel2IaSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel2OsSecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel2OsiModelSecurityPostureAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel2RiskDataSecuritySecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel2RiskPersonalDataSecuritySecurityAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel2RiskPhysicalAssessment"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel3DeviceTotalIntroducedRiskScore"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevel3DeviceTotalSecurityScore"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLongitude"/>
+        <Class IRI="#Scan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOsUpdate"/>
+        <Class IRI="#ScannedDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1CveCvssTotalScore"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedClearingTracks"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedGainingAccess"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedMaintainingAccess"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedReconnaissance"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1EcCouncilAttackPhaseDetectedScanning"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprBiometricDataBreachProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprCrossBorderProcessingProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprDataConcerningHealthBreachProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprLevelOfProtection"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataBreachProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossPermProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityAvailabilityLossTempProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityConfidentialityLossProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprPersonalDataSecurityIntegrityLossProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprProcessingProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1GdprProfilingProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1IaAuthenticityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1IaAvailabilityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1IaConfidentialityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1IaIntegrityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1IaNonRepudiationAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsFilePrinterSharingSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsImSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsInstalledApplicationsSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsMtaSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsOsSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsRemoveAccessSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsWebServerSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsiModelLayer1SecurityPostureAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsiModelLayer2SecurityPostureAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsiModelLayer3SecurityPostureAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsiModelLayer4SecurityPostureAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsiModelLayer5SecurityPostureAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsiModelLayer6SecurityPostureAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1OsiModelLayer7SecurityPostureAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityAvailabilityLoss"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityConfidentialityLoss"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityDataBreach"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskDataSecurityIntegrityLoss"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityDataConcerningHealthBreach"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityFinancialLoss"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIdentityTheft"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityIntellectualPropertyLoss"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskPersonalDataSecurityPublicReputationDamage"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskPhysicalEnvironmentDegradation"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel1RiskPhysicalHumanInjury"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel2EcCouncilAttackDetectionProbability"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel2GdprCompliance"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel2IaSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel2OsSecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel2OsiModelSecurityPostureAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel2RiskDataSecuritySecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel2RiskPersonalDataSecuritySecurityAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel2RiskPhysicalAssessment"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel3DeviceTotalIntroducedRiskScore"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevel3DeviceTotalSecurityScore"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceFirmware</IRI>
+        <Literal xml:lang="en">Device firmware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceFirmware</IRI>
+        <Literal xml:lang="pl">Firmware urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceManufacturer</IRI>
+        <Literal xml:lang="en">Device manufacturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceManufacturer</IRI>
+        <Literal xml:lang="pl">Producent urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceModel</IRI>
+        <Literal xml:lang="en">Device model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceModel</IRI>
+        <Literal xml:lang="pl">Model urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceOsType</IRI>
+        <Literal xml:lang="en">Device os type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceOsType</IRI>
+        <Literal xml:lang="pl">Typ SO urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceOsVersion</IRI>
+        <Literal xml:lang="pl">Wersja SO urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceOsVersion</IRI>
+        <Literal xml:lang="en">device os version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceType</IRI>
+        <Literal xml:lang="en">Device type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceType</IRI>
+        <Literal xml:lang="pl">Typ urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GranuleRepresentative</IRI>
+        <Literal xml:lang="en">Granule representative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GranuleRepresentative</IRI>
+        <Literal xml:lang="pt">Reprezentant granuli</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Granules</IRI>
+        <Literal xml:lang="pt">Granule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Granules</IRI>
+        <Literal xml:lang="en">Granules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MapLocation</IRI>
+        <Literal xml:lang="en">Localisation on map</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MapLocation</IRI>
+        <Literal xml:lang="pl">Lokalizacja na mapie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Scan</IRI>
+        <Literal xml:lang="en">Scan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Scan</IRI>
+        <Literal xml:lang="pl">Skan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ScannedDevice</IRI>
+        <Literal xml:lang="en">Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ScannedDevice</IRI>
+        <Literal xml:lang="pl">Skanowane urządzenie</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
