@@ -1970,6 +1970,11 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeviceFirmware</IRI>
+        <Literal>Firmware version installed on the device, describing low-level device software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DeviceFirmware</IRI>
         <Literal xml:lang="en">Device firmware</Literal>
@@ -1978,6 +1983,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DeviceFirmware</IRI>
         <Literal xml:lang="pl">Firmware urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceFirmware</IRI>
+        <Literal>Device Firmware</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2000,6 +2010,11 @@
         <Literal xml:lang="pl">Model urządzenia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeviceOsType</IRI>
+        <Literal>General category of operating system installed on the device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DeviceOsType</IRI>
         <Literal xml:lang="en">Device os type</Literal>
@@ -2008,6 +2023,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DeviceOsType</IRI>
         <Literal xml:lang="pl">Typ SO urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceOsType</IRI>
+        <Literal>Device Operating System Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeviceOsVersion</IRI>
+        <Literal>Specific version of the device&apos;s operating system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2021,6 +2046,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceOsVersion</IRI>
+        <Literal>Device Operating System Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeviceType</IRI>
+        <Literal>Category of an IoT device, such as printer, camera, smartwatch or other device subtype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DeviceType</IRI>
         <Literal xml:lang="en">Device type</Literal>
     </AnnotationAssertion>
@@ -2028,6 +2063,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DeviceType</IRI>
         <Literal xml:lang="pl">Typ urządzenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceType</IRI>
+        <Literal>Device Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GranuleRepresentative</IRI>
+        <Literal>A representative device for a granule, characterized by the most typical features of the cluster</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2041,6 +2086,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GranuleRepresentative</IRI>
+        <Literal>Granule Representative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Granules</IRI>
+        <Literal>A cluster of scanned devices grouped according to their characteristics for data granulation and similarity-based analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Granules</IRI>
         <Literal xml:lang="pt">Granule</Literal>
     </AnnotationAssertion>
@@ -2048,6 +2103,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Granules</IRI>
         <Literal xml:lang="en">Granules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Granules</IRI>
+        <Literal>Granule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MapLocation</IRI>
+        <Literal>A generalized geographic area where devices were scanned. Locations are anonymized and quantized for privacy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2061,6 +2126,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MapLocation</IRI>
+        <Literal>Map Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Scan</IRI>
+        <Literal>A scanning event performed by a mobile device. Stores timestamp and the location where IoT devices were detected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Scan</IRI>
         <Literal xml:lang="en">Scan</Literal>
     </AnnotationAssertion>
@@ -2071,6 +2146,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Scan</IRI>
+        <Literal>Scan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ScannedDevice</IRI>
+        <Literal>An IoT device identified during a network scan. Contains device properties such as type, model, manufacturer, firmware, operating system and security metrics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ScannedDevice</IRI>
         <Literal xml:lang="en">Device</Literal>
     </AnnotationAssertion>
@@ -2078,6 +2163,271 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ScannedDevice</IRI>
         <Literal xml:lang="pl">Skanowane urządzenie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ScannedDevice</IRI>
+        <Literal>Scanned Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongsToGranule</IRI>
+        <Literal>Links a scanned device to a granule. Functional property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongsToGranule</IRI>
+        <Literal>belongs to granule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal>Inverse of isIn. Connects a map location with the devices found in it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contains</IRI>
+        <Literal>contains device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDate</IRI>
+        <Literal>The date and time when the network scan was performed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDate</IRI>
+        <Literal>scan date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFirmware</IRI>
+        <Literal>Links a scanned device to its firmware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFirmware</IRI>
+        <Literal>has firmware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLatitude</IRI>
+        <Literal>Latitude value of the geographic location where the scan was conducted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLatitude</IRI>
+        <Literal>latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLocationTotalSecurityScore</IRI>
+        <Literal>Calculated security score for a given map location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLocationTotalSecurityScore</IRI>
+        <Literal>location security score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLocationTotalSynergySecurityScore</IRI>
+        <Literal>Security score adjusted for interactions and synergies between devices in a location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLocationTotalSynergySecurityScore</IRI>
+        <Literal>location synergy security score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLongitude</IRI>
+        <Literal>Longitude value of the geographic location where the scan was conducted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLongitude</IRI>
+        <Literal>longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasManufacturer</IRI>
+        <Literal>Links a scanned device to its manufacturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasManufacturer</IRI>
+        <Literal>has manufacturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasModel</IRI>
+        <Literal>Links a scanned device to its model. Functional property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasModel</IRI>
+        <Literal>has model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasName</IRI>
+        <Literal>Human-readable name of the scanned device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasName</IRI>
+        <Literal>device name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNumberOfDevices</IRI>
+        <Literal>Indicates how many IoT devices were detected during a single scan event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNumberOfDevices</IRI>
+        <Literal>number of devices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOsType</IRI>
+        <Literal>Associates a scanned device with the type of installed operating system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOsType</IRI>
+        <Literal>has operating system type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOsUpdate</IRI>
+        <Literal>Indicates whether the operating system has updates available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOsUpdate</IRI>
+        <Literal>OS update availability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOsVersion</IRI>
+        <Literal>Associates a scanned device with a specific OS version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOsVersion</IRI>
+        <Literal>has operating system version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRepresentative</IRI>
+        <Literal>Links a granule to its representative. Functional property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRepresentative</IRI>
+        <Literal>has representative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasScanProperties</IRI>
+        <Literal>Links a scan event to the set of basic scan parameters such as date and geographic coordinates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasScanProperties</IRI>
+        <Literal>scan properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasScannedDevice</IRI>
+        <Literal>Links a scan event to a detected device. Functional property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasScannedDevice</IRI>
+        <Literal>has scanned device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFirmwareOf</IRI>
+        <Literal>Links firmware to the corresponding device model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFirmwareOf</IRI>
+        <Literal>is firmware of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFoundDuring</IRI>
+        <Literal>Inverse of hasScannedDevice. Indicates during which scan a device was detected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFoundDuring</IRI>
+        <Literal>is found during</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isGranuleRepresentativeOf</IRI>
+        <Literal>Inverse functional property linking a granule representative to its granule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isGranuleRepresentativeOf</IRI>
+        <Literal>is representative of granule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isIn</IRI>
+        <Literal>Links a scanned device to its map location. Functional property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isIn</IRI>
+        <Literal>is in location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isModelOf</IRI>
+        <Literal>Links a device model to its manufacturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isModelOf</IRI>
+        <Literal>is model of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSubtypeOf</IRI>
+        <Literal>Represents hierarchical relations between device types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSubtypeOf</IRI>
+        <Literal>is subtype of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTypeOf</IRI>
+        <Literal>Associates a scanned device with its device type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTypeOf</IRI>
+        <Literal>is type of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isVersionOf</IRI>
+        <Literal>Links OS version to OS type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isVersionOf</IRI>
+        <Literal>is version of</Literal>
     </AnnotationAssertion>
 </Ontology>
 
